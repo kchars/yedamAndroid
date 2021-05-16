@@ -1,0 +1,4 @@
+include ':myplayer'
+include ':myaudio'
+include ':app'
+rootProject.name = "myThread"

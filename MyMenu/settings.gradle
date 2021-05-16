@@ -1,0 +1,4 @@
+include ':myfrag'
+include ':mynavi'
+include ':app'
+rootProject.name = "My Menu"

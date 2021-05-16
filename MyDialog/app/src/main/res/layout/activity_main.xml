@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myDialog" />
+
+    <Button
+        android:id="@+id/btnDialog1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="alert대화상자"/>
+
+    <Button
+        android:id="@+id/btnDialog2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="배열 대화상자"/>
+
+    <Button
+        android:id="@+id/btnDialog3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="커스텁 대화상자"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnInflate"
+        android:text="인플레이터"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        />
+
+
+
+</LinearLayout>

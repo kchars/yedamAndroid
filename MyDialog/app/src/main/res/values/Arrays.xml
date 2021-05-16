@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="androidVersion">
+        <item>파이</item>
+        <item>Q(10)</item>
+        <item>R(11)</item>
+    </array>
+
+</resources>

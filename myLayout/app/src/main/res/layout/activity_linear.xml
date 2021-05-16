@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LinearActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#aabbcc"
+        android:layout_weight="9"
+        android:id="@+id/lienar1"
+        >
+
+        <CheckBox
+            android:id="@+id/ckb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안드로이드" />
+
+        <CheckBox
+            android:id="@+id/ckb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="윈도우" />
+
+        <CheckBox
+            android:id="@+id/ckb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이폰" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:baselineAligned="true"
+        android:layout_weight="1"
+        android:id="@+id/lienar2"
+        >
+
+        <ToggleButton
+            android:id="@+id/tog1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:height="50dp"
+            android:text="토글버튼" />
+
+        <Button
+            android:id="@+id/btnAll"
+            android:layout_width="wrap_content"
+            android:layout_height="138dp"
+            android:text="모두선택"
+
+            />
+
+        <Switch
+            android:id="@+id/sw1"
+            android:layout_width="115dp"
+            android:layout_height="65dp"
+            android:height="100dp"
+            android:checked="false"
+            android:text="스위치" />
+
+    </LinearLayout>
+
+</LinearLayout>
