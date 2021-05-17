@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mainBtn1 = findViewById(R.id.MainBtn1);
-        mainBtn2 = findViewById(R.id.MainBtn2);
-        mainBtn3 = findViewById(R.id.MainBtn3);
+        mainBtn1 = (Button)findViewById(R.id.MainBtn1);
+        mainBtn2 = (Button)findViewById(R.id.MainBtn2);
+        mainBtn3 = (Button)findViewById(R.id.MainBtn3);
 
         mainBtn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
                 startActivity(intent);
             }
+        });
+
+        mainBtn2.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), ThirdActivity.class);
+            startActivity(intent);
         });
 
     }

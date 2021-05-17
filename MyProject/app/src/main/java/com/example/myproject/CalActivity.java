@@ -1,5 +1,6 @@
 package com.example.myproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,16 +12,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class CalActivity extends AppCompatActivity {
     EditText edit1, edit2;
-    Button btnAdd, btnSub, btnMul, btnDiv;
+    Button btnAdd, btnSub, btnMul, btnDiv, btnBack;
     TextView textResult;
     String num1, num2;
     double result;
     double tab1, tab2;
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_cal);
         int[] btnNum = {R.id.btn0, R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8, R.id.btn9};
         setTitle("초간단 계산기");
 
@@ -52,6 +54,7 @@ public class CalActivity extends AppCompatActivity {
         btnSub = (Button) findViewById(R.id.BtnSub);
         btnMul = (Button) findViewById(R.id.BtnMul);
         btnDiv = (Button) findViewById(R.id.BtnDiv);
+        btnBack = (Button) findViewById(R.id.btnBack);
 
         textResult = (TextView) findViewById(R.id.TextResult);
 
@@ -91,5 +94,10 @@ public class CalActivity extends AppCompatActivity {
         btnSub.setOnClickListener(btnListener);
         btnMul.setOnClickListener(btnListener);
         btnDiv.setOnClickListener(btnListener);
+
+        btnBack.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
+            startActivity(intent);
+        });
     }
 }
