@@ -22,7 +22,7 @@
 
     <Button
         android:id="@+id/MainBtn1"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="건축수준측량야장"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,7 +34,7 @@
 
     <Button
         android:id="@+id/MainBtn2"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="수준측량학습영상보기"
         app:layout_constraintBottom_toBottomOf="parent"
