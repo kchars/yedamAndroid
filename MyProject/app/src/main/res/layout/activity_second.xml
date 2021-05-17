@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <Button
+        android:id="@+id/SecondTopBtn1"
+        android:layout_width="83dp"
+        android:layout_height="55dp"
+        android:text="뒤로
+        가기"
+        app:layout_constraintBottom_toBottomOf="@+id/SecondTopBtn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/SecondTopBtn2"
+        android:layout_width="83dp"
+        android:layout_height="55dp"
+        android:text="계산기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="413dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edge"
+        android:gravity="center"
+        android:text="건축수준측량 야장"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="602dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.121">
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="631dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/edge">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/edgegray"
+                    android:gravity="center"
+                    android:text="측점" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edgegray"
+                    android:gravity="center"
+                    android:text="후시" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edgegray"
+                    android:gravity="center"
+                    android:text="전시" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edgegray"
+                    android:gravity="center"
+                    android:text="기계고" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edgegray"
+                    android:gravity="center"
+                    android:text="지반고" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edgegray"
+                    android:gravity="center"
+                    android:text="비고" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/edge">
+
+                <TextView
+                    android:id="@+id/lv2.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/edge"
+                    android:gravity="center"
+                    android:text="1" />
+
+                <EditText
+                    android:id="@+id/lv2.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edge"
+                    android:gravity="center"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/lv2.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edgeorange"
+                    android:gravity="center"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/lv2.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edgeorange"
+                    android:gravity="center"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/lv2.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edge"
+                    android:gravity="center"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/lv2.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edge"
+                    android:gravity="center"
+                    android:inputType="textPersonName" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edge">
+
+                <TextView
+                    android:id="@+id/lv3.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/edge"
+                    android:gravity="center"
+                    android:text="2" />
+
+                <EditText
+                    android:id="@+id/lv3.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edge"
+                    android:gravity="center"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/lv3.3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edge"
+                    android:gravity="center"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/lv3.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edgeorange"
+                    android:gravity="center"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/lv3.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edgeorange"
+                    android:gravity="center"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/lv3.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edge"
+                    android:gravity="center"
+                    android:inputType="textPersonName" />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/SecondBottomBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="새파일"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainBtn1"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <Button
+        android:id="@+id/SecondBottomBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="저장"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainBtn1"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <Button
+        android:id="@+id/SecondBottomBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="파일"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.668"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainBtn1"
+        app:layout_constraintVertical_bias="0.901" />
+
+    <Button
+        android:id="@+id/SecondBottomBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="엑셀"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainBtn1"
+        app:layout_constraintVertical_bias="0.901" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
