@@ -46,6 +46,13 @@ public class SecondActivity extends AppCompatActivity {
         secondTopBtn2.setOnClickListener(view -> {goCalPage();});
 
 
+
+        double num1 = Double.parseDouble(lv2_2.getText().toString()) + Double.parseDouble(lv2_5.getText().toString());
+        lv2_4.setText(String.valueOf(num1));
+
+        double num2 = Double.parseDouble(lv2_4.getText().toString()) - Double.parseDouble(lv3_3.getText().toString());
+        lv3_5.setText(String.valueOf(num2));
+
     }
 
     private void goCalPage() {
