@@ -1,11 +1,11 @@
 package com.example.myproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.myproject.R;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -14,8 +14,9 @@ import com.google.android.youtube.player.YouTubePlayerView;
 public class ThirdActivity extends YouTubeBaseActivity {
     YouTubePlayerView playerView;
     YouTubePlayer player;
+    Button thirdTopBtn1;
 
-    private static String API_KEY = "AIzaSyBWOOsRWLGOQE8hTgPcTpyCFeAHnYWsOYk";
+    private static String API_KEY = "AIzaSyB3lgEALNYeCJqKz-SuOBmBfI3mhQ2yLtI";
     private static String videoId = "Ktazno7rgZg";
 
     @Override
@@ -24,6 +25,8 @@ public class ThirdActivity extends YouTubeBaseActivity {
         setContentView(R.layout.activity_third);
 
         initPlayer();
+        thirdTopBtn1 = findViewById(R.id.ThirdTopBtn1);
+        thirdTopBtn1.setOnClickListener(view -> {goHomePage();});
 
         Button button = findViewById(R.id.button_play);
         button.setOnClickListener(new View.OnClickListener() {
@@ -34,7 +37,12 @@ public class ThirdActivity extends YouTubeBaseActivity {
         });
     }
 
-    public void initPlayer(){
+    private void goHomePage() {
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void initPlayer() {
         playerView = findViewById(R.id.playerView);
         playerView.initialize(API_KEY, new YouTubePlayer.OnInitializedListener() {
             @Override
@@ -43,7 +51,8 @@ public class ThirdActivity extends YouTubeBaseActivity {
 
                 player.setPlayerStateChangeListener(new YouTubePlayer.PlayerStateChangeListener() {
                     @Override
-                    public void onLoading() {}
+                    public void onLoading() {
+                    }
 
                     @Override
                     public void onLoaded(String id) {
@@ -53,16 +62,20 @@ public class ThirdActivity extends YouTubeBaseActivity {
                     }
 
                     @Override
-                    public void onAdStarted() {}
+                    public void onAdStarted() {
+                    }
 
                     @Override
-                    public void onVideoStarted() {}
+                    public void onVideoStarted() {
+                    }
 
                     @Override
-                    public void onVideoEnded() {}
+                    public void onVideoEnded() {
+                    }
 
                     @Override
-                    public void onError(YouTubePlayer.ErrorReason errorReason) {}
+                    public void onError(YouTubePlayer.ErrorReason errorReason) {
+                    }
                 });
             }
 
@@ -72,9 +85,9 @@ public class ThirdActivity extends YouTubeBaseActivity {
         });
     }
 
-    public void playVideo(){
-        if(player != null){
-            if(player.isPlaying()){
+    public void playVideo() {
+        if (player != null) {
+            if (player.isPlaying()) {
                 player.pause();
             }
             player.cueVideo(videoId);

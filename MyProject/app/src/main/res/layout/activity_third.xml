@@ -7,6 +7,28 @@
     android:layout_height="match_parent"
     tools:context=".ThirdActivity">
 
+    <Button
+        android:id="@+id/ThirdTopBtn1"
+        android:layout_width="83dp"
+        android:layout_height="55dp"
+        android:text="뒤로
+        가기"
+        app:layout_constraintBottom_toBottomOf="@+id/SecondTopBtn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ThirdtextView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/edge"
+        android:gravity="center"
+        android:text="건축수준측량 야장"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/playerView"
         android:layout_width="376dp"
@@ -16,7 +38,8 @@
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.243" />
+        app:layout_constraintVertical_bias="0.243"
+        tools:ignore="MissingClass" />
 
     <Button
         android:id="@+id/button_play"
